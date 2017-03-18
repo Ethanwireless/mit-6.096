@@ -93,3 +93,22 @@ object.member
 pointer->member
 
 
+// enum
+#include <iostream>
+using namespace std;
+
+enum suit_t {CLUBS, DIAMONDS, HEARTS, SPADES};
+
+void print_suit(const suit_t suit) {
+	// const char *names[] = {"Clubs", "Diamonds", "Hearts", "Spades"};
+	// cout << names[suit] << endl;
+	cout << suit << endl;
+}
+
+int main() {
+	suit_t a = DIAMONDS;
+	print_suit(a);
+
+	return 0;
+}
+
